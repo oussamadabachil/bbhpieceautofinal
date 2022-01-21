@@ -23,6 +23,10 @@ header>nav>ul>li{
 
 
 }
+
+.mobile_menu>img{
+  display: none;
+}
 header>nav>ul>li>a{
     color: black;
     transition: all .3s;
