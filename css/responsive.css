@@ -23,6 +23,15 @@
         margin-top: 5rem;
     }
 
+    footer{
+        display: block;
+        width: 100%;
+    }
+    footer>ul{
+        width: 100%;
+        text-align: center;
+
+    }
     .grid_essentials{
         display: block;
     }
