@@ -1,0 +1,11 @@
+@keyframes opacity{
+
+    from{
+
+        filter: brightness(0);
+    }
+
+    to{
+        filter: brightness(1);
+    }
+}

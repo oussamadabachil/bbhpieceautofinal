@@ -1,0 +1,51 @@
+@media screen and (max-width: 900px) {
+
+        .mobile_menu{
+            position: fixed;
+            height: 5rem;
+            width: 100%;
+            top: 0;
+            background-color: rgb(255, 255, 255);
+            z-index: 2;
+        }
+
+        
+        .desktop_menu{
+            display: none;
+        }
+
+    #carouselExampleControls{
+        display: block;
+        margin-top: 5rem;
+    }
+
+    .grid_essentials{
+        display: block;
+    }
+    .mobile_menu>img{
+        margin: 0 auto;
+        display: block;
+        width: 8rem;
+    }
+    .grid_essenital_flip{
+        display: block;
+        margin-bottom: 42rem;
+    }
+    .grid_essenital_flip>div{
+
+        padding-top: 1rem;
+    }
+
+    .avis_grid{
+        display: none;
+    }
+    .grid_contact{
+        display: block;
+    }
+    .grid_contact>ul{
+        position: relative;
+        left: 50%;
+        top: 14rem;
+    }
+  }
+  

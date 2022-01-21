@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bellota+Text:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+}
+li{
+    text-align: center;
+
+    list-style: none;
+    vertical-align: middle;
+
+}
+header>nav>ul>li{
+    font-size: 1.6rem;
+    font-family: Bellota Text;
+    font-weight: 900;
+
+
+
+}
+header>nav>ul>li>a{
+    color: black;
+    transition: all .3s;
+
+    text-decoration: none;
+}
+
+header>nav>ul>li>a:hover{
+    color:rgb(76,163,70) ;
+    transition: all .3s;
+}
+
+header>nav>ul{
+    align-items: center;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6,1fr);
+
+}
+
+header>nav>ul>li>img{
+    display: block;
+    width: 13rem;
+    padding-top: 1rem;
+}
+
+.grid_essentials{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 99%;
+    height: auto;
+    margin: .5rem auto;
+}
+
+.grid_essentials>.eight_essentials{
+    display: block;
+    width: 100%;
+    background-color: rgb(235,234,236) ;
+}
+
+.eight_essentials>h1{
+    font-family:sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.grid_essentials>img{
+    display: block;
+    width: 100%;
+}
+.eight_essentials>ul>li{
+    font-family: Bellota Text;
+    font-weight: bolder;
+    font-size: 2.1rem;
+    transition: all .3s;
+    cursor: pointer;
+
+    padding-top: 2rem;
+}
+.eight_essentials>ul>li:hover{
+  color:rgb(76,163,70) ;
+  transition: all .3s;
+}
+
+
+.grid_essenital_flip{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 99%;
+    grid-gap: 1rem;
+    height: 25rem;
+    margin: 5rem auto;
+    
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .carousel-item>#oussama{
+    display: none;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  .flip-card-back>p{
+      font-family: Bellota Text;
+    overflow-y: auto;
+  font-size: 2rem;  
+  width: 90%;
+  text-align: center;
+  line-height: 3rem;
+  display: block;
+  margin: 2rem auto;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-image: url(../asset/key_cart.png);
+    background-size: contain;
+    background-color: red;
+
+  }
+  
+  /* Style the back side */
+
+  .first-behind{
+    background-image: url(../asset/key_cart.png);
+    background-size: cover;
+
+  }
+  .second-behind{
+    background-image: url(../asset/compteur.jpg);
+    background-size: cover;
+
+  }
+  .third-behind{
+    background-image: url(../asset/service_montage_voiture.png);
+    background-size: cover;
+
+  }
+  .flip-card-back{
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+    background-size: cover;
+  
+    transform: rotateY(180deg);
+  }
+  
+  .second_card{
+    background-image: url(../asset/compteur.jpg);
+    background-size: cover;
+  
+  
+  }
+  
+  .first_card{
+    background-image: url(../asset/key_cart.png);
+    background-size: cover;
+  
+  
+  }
+  
+  
+  .third_card{
+    background-image: url(../asset/service_montage_voiture.png);
+    background-size: cover;
+  
+  
+  }
+  
+  .avis_grid{
+      display: grid;
+      width: 99%;
+      margin: 0 auto;
+      height: 30rem;
+      background-image: url(../asset/nos_avis.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+  .avis_grid>h2{
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 2rem;
+      font-size: 2.5rem;
+
+  }
+
+  .subgrid_avis{
+      display: grid;
+      margin: 2rem auto;
+      grid-gap: 3rem;
+      grid-template-columns: repeat(3,1fr);
+      width: 95%;
+      
+  }
+
+  .subgrid_avis>div{
+      position: relative;
+      width: 100%;
+      height: 30rem;
+      background-color: rgb(255, 255, 255);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  }
+  .subgrid_avis>div>ul{
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  }
+
+
+  .subgrid_avis>div>ul>li>img{
+    display: block;
+    width: 90%;
+    margin: 0 auto ;
+  }
+  
+  .subgrid_avis>div>ul>li{
+      padding: 1.7rem;
+  }
+  .subgrid_avis>div>ul>li:first-child{
+      font-size: 2rem;
+
+    }
+
+    .subgrid_avis>div>ul>li:last-child{
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    h3{
+        text-align: center;
+        display: block;
+        padding: 1rem;
+        margin: 0 auto;
+        width: 99%;
+        background-color: rgb(235,234,236) ;
+        margin-top: 10rem;
+    }
+
+    .grid_contact{
+      position: relative;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+    .grid_contact>iframe{
+        width: 100%;
+        height: 40rem;
+    }
+.grid_contact>ul{
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%,-50%);
+}
+      .grid_contact>ul>li:first-child{
+        font-family: sans-serif;
+
+        font-size: 3rem;
+        padding-top: .3rem;
+      }
+
+      .grid_contact>ul>li{
+        font-weight: 300;
+        font-size: 2.3rem;
+        padding-top: .3rem;
+      }
+
+
+
+      footer{
+        width: 100%;
+        background-color: rgb(235,234,236) ;
+        height: auto;
+        left: 0;
+        grid-template-columns: repeat(4,1fr);
+
+        display: grid;
+        margin: 2rem auto -2rem;
+      }
+
+      footer>ul>li:first-child{
+        font-size: 2rem;
+      }
+
+
+      footer>ul>li{
+        text-align: left;
+      }
+
+      footer>ul{
+
+      }
+
+.absolute_p {
+  display: none;
+  z-index: 4;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight:100;
+  width: 100%;
+  text-align: center;
+  font-size: 6rem;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: absolute;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+:root {
+  --marquee-width:99%;
+  --marquee-height: 20vh;
+  /* --marquee-elements: 12; */ /* defined with JavaScript */
+  --marquee-elements-displayed: 5;
+  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+.marquee {
+  margin: 0 auto 1rem;
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  color: #eee;
+  overflow: hidden;
+  position: relative;
+}
+.marquee:before, .marquee:after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+.marquee:before {
+  left: 0;
+ }
+.marquee:after {
+  right: 0;
+}
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+/* .marquee-content:hover {
+  animation-play-state: paused;
+} */
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
+}
+.marquee-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
+  white-space: nowrap;
+}
+
+.marquee-content li img {
+  width: 100%;
+  padding-left: 2rem;
+  /* height: 100%; */
+}
+
+@media (max-width: 600px) {
+  html { font-size: 12px; }
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 16vh;
+    --marquee-elements-displayed: 3;
+  }
+  .marquee:before, .marquee:after { width: 5rem; }
+}
+/*  Checkout my other pens on  https://codepen.io/grohit/  */
+
+
+
+#carouselExampleControls{
+  animation: opacity 3s linear ;
+}
